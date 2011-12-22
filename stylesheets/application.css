@@ -1,3 +1,16 @@
 body {
   font-family: Arial, Verdana;
 }
+
+.widget div{
+  padding: 2px;
+}
+
+.login {
+  margin: auto;
+  width: 400px;
+}
+
+.login .content {
+  padding: 10px;
+}
