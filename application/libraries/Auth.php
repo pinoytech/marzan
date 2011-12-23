@@ -7,7 +7,7 @@ class Auth
   function __construct()
   {
     $this->CI =& get_instance();
-    $this->CI->load->model('users_model', 'user', TRUE);
+    $this->CI->load->model('user_model', 'user', TRUE);
   }
   
   function logged_in($role = NULL)
