@@ -1,12 +1,12 @@
 <?php
 
-class MY_Controller extends Controller {
+class MY_Controller extends CI_Controller {
 
-	function MY_Controller()
-	{
-		parent::Controller();
-		$this->output->enable_profiler(TRUE);
-	}
+  function MY_Controller()
+  {
+    parent::Controller();
+    $this->output->enable_profiler(TRUE);
+  }
 }
 
 require_once(APPPATH.'libraries/Admin_Controller.php');
