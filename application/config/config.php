@@ -224,7 +224,8 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'gvim';
+$config['salt_pattern'] = '1, 3, 5, 9, 14, 15, 20, 21, 28, 30';
 
 /*
 |--------------------------------------------------------------------------

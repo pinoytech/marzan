@@ -20,6 +20,9 @@ class Migration_Create_users_table extends CI_Migration {
         'constraint' => 12,
 	'type' => 'VARCHAR'
       ),
+      'deleted' => array(
+	'type' => 'INT'
+      )
     ));
 		
     $this->dbforge->create_table('users');

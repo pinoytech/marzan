@@ -14,7 +14,10 @@ class Users extends MY_Controller {
     $this->form_validation->set_rules('username', 'Username', 'required');
     $this->form_validation->set_rules('password', 'Password', 'required|callback__authorization');
     $this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all ui-widget-content">', '</div>');
-    $this->form_validation->run();
+    if ($this->form_validation->run())
+    {
+      redirect('admin/front');
+    }
     $this->load->view('users/login');
   }
 
@@ -35,7 +38,7 @@ class Users extends MY_Controller {
   {
     $this->load->library('form_validation');
     $this->form_validation->set_rules('username', 'Username', 'required');
-    $this->form_validation->set_rules('password', 'Password', 'required|callback__authorization');
+    $this->form_validation->set_rules('password', 'Password', 'required');
     $this->form_validation->set_rules('password_confirmation', 'Password Confirmation', 'required|matches[password]');
     $this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all ui-widget-content">', '</div>');
 

@@ -10,7 +10,7 @@ class Migration_Create_roles_table extends CI_Migration {
     $this->dbforge->add_field(array(
       'role' => array(
         'type' => 'VARCHAR',
-        'contrraint' => '12'
+        'constraint' => '12'
       ),
       'created_at' => array(
 	'type' => 'DATETIME'

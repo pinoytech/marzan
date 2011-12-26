@@ -115,7 +115,7 @@ class User_model extends CI_Model {
   {
     $this->db->where(array('deleted != ' => 1));
     $query = $this->db->get('users', $limit, $offset);
-  
+
     if ($query->num_rows() > 0)
     {
       return $query->result();

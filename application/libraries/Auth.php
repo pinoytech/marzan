@@ -5,7 +5,7 @@ class Auth
   var $CI;
   var $config;
 
-  function Auth()
+  function __construct()
   {
     $this->CI =& get_instance();
     $this->CI->load->model('user_model', 'user', TRUE);
@@ -41,7 +41,6 @@ class Auth
     return FALSE;
   
   } // function login()
-
 
   function hash_password($password = '', $salt)
   {
@@ -164,14 +163,14 @@ class Auth
 
   } // function logout()
 	
-  function register($data)
+  function register($username, $password)
   {
-    if (isset($data['password']))
+    if (isset($password))
     {
-      $data['password'] = $this->hash_password($data['password'], $this->find_salt($password));
+      $password = $this->hash_password($password, $this->find_salt($password));
     }
 
-    return $this->CI->user->register($data);
+    return $this->CI->user->register($username, $password);
   } // function register()
 
 } // class Auth
