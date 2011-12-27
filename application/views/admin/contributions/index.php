@@ -1,3 +1,4 @@
+<?php set_header();?>
 <div>
   <?php if ($contributions):?>
   <?php $this->table->set_heading('username', 'actions');?>
@@ -7,3 +8,4 @@
   <?php echo $this->table->generate(); ?>
 <?php endif;?>
 </div>
+<?php set_footer();?>
