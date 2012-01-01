@@ -1,16 +1,17 @@
 <?php load_header(); ?>
 <div class="login widget">
-  <div class='ui-widget ui-widget-content ui-corner-all'>
-    <div class='ui-widget-header ui-corner-all'>User Login</div>
-    <div class='ui-widget-content ui-corner-bottom content'>
+
+  <div class="widget ui-widget ui-widget-content">
+    <div class="ui-dialog-titlebar ui-widget-header">Add Collection</div>
+    <div class="content">
       <?php echo validation_errors();?>
       <?php echo form_open(site_url('/users/login')) ?>
         <p>
-          <label>Username</label>
+          <?php echo form_label('Username', 'username');?>
           <input type="text" name="username" value="<?php echo set_value('username');?>" />
         </p>
         <p>
-          <label>Password</label>
+          <?php echo form_label('Password', 'password');?>
           <input type="password" name="password" value="" />
         </p>
         <p>

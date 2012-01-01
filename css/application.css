@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Verdana;
+  margin-left: 10px;
+}
+
+.clear {
+  clear:both;
+}
+
+#container {
+  margin-right: 10px;
+  padding: 9px;
+  border: 1px solid #A6C9E2;
+}
+
+#header {
+  margin-right: 10px;
+}
+
+#header .title {
+  height: 100px;
+}
+
+#header .title h1 {
+  height: 100px;
+  font-size: 30px;
+  line-height: 100px;
+}
+
+.widget {
+  padding: 1em;
+}
+
+.widget .ui-dialog-titlebar{
+  padding: .2em .4em;
+  margin: -1em -1em 0;
+}
+
+.login {
+  margin: auto;
+  width: 400px;
+}
+
+.login .content {
+  padding: 10px;
+}
+
+.content {
+  margin-top: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.main {
+  width: 68%;
+  float: none;
+  margin-left: 32%;
+}
+
+.sidebar {
+  background: #000;
+  width: 30%;
+  float: left;
+}
+
+.sf-menu {
+  margin-bottom: 0 !important;
+}
+
+form input.two {
+  width: 28px;
+}
+
+form input.five {
+  width: 70px;
+}
+
+form .search {
+  border: 1px #888 dashed;
+  padding: 10px;
+  overflow: auto;
+  background: #FAD42E;
+  margin: 0 0 20px 0;
+}
+
+form .search p {
+  float: left;
+  margin: 0;
+  margin-right: 10px;
+  width: 45%;
+}
